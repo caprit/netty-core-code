@@ -34,9 +34,9 @@ public class DefaultPromiseTest {
         eventExecutor.execute(() -> calc(0, promise2));
 
         // sync，阻塞，如果有异常会抛出异常
-//        promise1.sync();
+        promise1.sync();
         // await，阻塞，不会抛出异常
-//        promise2.await();
+        promise2.await();
 
         System.out.println("finish");
 
